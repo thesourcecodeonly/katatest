@@ -10,9 +10,8 @@ public class Calc {
         int arabian;
         String result;
         boolean isRomanish;
-        // из введенной строки делаем массив строк, разделитель - пробел
+
         String[] operands = expression.split(" ");
-        // второй элемент массива присваиваем переменной operator
         String operator = operands.length == 3 ? operands[1] : null;
         // если введена некорректная строка (в массиве operands меньше трех элементов) - исключение
         if (operands.length < 3) throw new Exception("Строка не является математической операцией");
